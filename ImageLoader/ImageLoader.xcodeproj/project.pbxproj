@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F917C8C22917B2E00E1A9A6 /* ImageLoaderModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F917C8B22917B2E00E1A9A6 /* ImageLoaderModule.swift */; };
+		9F917C8E22917EBE00E1A9A6 /* Bundle+Additionals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F917C8D22917EBE00E1A9A6 /* Bundle+Additionals.swift */; };
 		9FA9D6A1229177090004A918 /* ImageLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FA9D69F229177090004A918 /* ImageLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9FA9D6C62291773B0004A918 /* ImageRowStateProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA9D6A82291773B0004A918 /* ImageRowStateProvider.swift */; };
 		9FA9D6C72291773B0004A918 /* CounterStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA9D6AA2291773B0004A918 /* CounterStorage.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F917C8B22917B2E00E1A9A6 /* ImageLoaderModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderModule.swift; sourceTree = "<group>"; };
+		9F917C8D22917EBE00E1A9A6 /* Bundle+Additionals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Additionals.swift"; sourceTree = "<group>"; };
 		9FA9D69C229177090004A918 /* ImageLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImageLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FA9D69F229177090004A918 /* ImageLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageLoader.h; sourceTree = "<group>"; };
 		9FA9D6A0229177090004A918 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 				9FA9D6B82291773B0004A918 /* Controller */,
 				9FA9D6A72291773B0004A918 /* Model */,
 				9FA9D6C02291773B0004A918 /* View */,
+				9F917C8B22917B2E00E1A9A6 /* ImageLoaderModule.swift */,
 				9FA9D69F229177090004A918 /* ImageLoader.h */,
 				9FA9D6A0229177090004A918 /* Info.plist */,
 				9FA9D6DD2291776D0004A918 /* ImageLoaderStoryboard.storyboard */,
@@ -165,6 +170,7 @@
 			children = (
 				9FA9D6BE2291773B0004A918 /* UIImage+Additionals.swift */,
 				9FA9D6BF2291773B0004A918 /* String+Additionals.swift */,
+				9F917C8D22917EBE00E1A9A6 /* Bundle+Additionals.swift */,
 			);
 			path = Additionals;
 			sourceTree = "<group>";
@@ -272,6 +278,7 @@
 				9FA9D6C92291773B0004A918 /* ImageRow.swift in Sources */,
 				9FA9D6CA2291773B0004A918 /* CounterRow.swift in Sources */,
 				9FA9D6CD2291773B0004A918 /* ButtonsRow.swift in Sources */,
+				9F917C8E22917EBE00E1A9A6 /* Bundle+Additionals.swift in Sources */,
 				9FA9D6C72291773B0004A918 /* CounterStorage.swift in Sources */,
 				9FA9D6DB2291773B0004A918 /* ButtonsCell.swift in Sources */,
 				9FA9D6D02291773B0004A918 /* ButtonsStateProvider.swift in Sources */,
@@ -289,6 +296,7 @@
 				9FA9D6D42291773B0004A918 /* DataControllerImpl.swift in Sources */,
 				9FA9D6C82291773B0004A918 /* CounterStorageImpl.swift in Sources */,
 				9FA9D6D72291773B0004A918 /* UIImage+Additionals.swift in Sources */,
+				9F917C8C22917B2E00E1A9A6 /* ImageLoaderModule.swift in Sources */,
 				9FA9D6CB2291773B0004A918 /* InputRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

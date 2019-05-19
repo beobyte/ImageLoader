@@ -11,7 +11,7 @@ import UIKit
 extension UIImage {
     
     static var placeholder: UIImage {
-        return UIImage(named: "placeholder_300x250")!
+        return UIImage(named: "placeholder_300x250", in: Bundle.imageLoaderBundle, compatibleWith: nil)!
     }
     
 }
