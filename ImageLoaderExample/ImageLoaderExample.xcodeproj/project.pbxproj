@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9F917C8522917AC700E1A9A6 /* ImageLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F917C8422917AC700E1A9A6 /* ImageLoader.framework */; };
-		9F917C8622917AC700E1A9A6 /* ImageLoader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F917C8422917AC700E1A9A6 /* ImageLoader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9F917C902291802000E1A9A6 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F917C8F2291802000E1A9A6 /* NavigationController.swift */; };
 		9FA9D681229176600004A918 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA9D680229176600004A918 /* AppDelegate.swift */; };
 		9FA9D686229176600004A918 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA9D684229176600004A918 /* Main.storyboard */; };
@@ -23,7 +21,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9F917C8622917AC700E1A9A6 /* ImageLoader.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -31,8 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9F917C8422917AC700E1A9A6 /* ImageLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ImageLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F917C8F2291802000E1A9A6 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		9F917C9122918D3300E1A9A6 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 		9FA9D67D229176600004A918 /* ImageLoaderExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageLoaderExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FA9D680229176600004A918 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FA9D685229176600004A918 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,7 +43,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F917C8522917AC700E1A9A6 /* ImageLoader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +52,6 @@
 		9F917C8822917AD500E1A9A6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9F917C8422917AC700E1A9A6 /* ImageLoader.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -87,6 +82,7 @@
 				9FA9D687229176620004A918 /* Assets.xcassets */,
 				9FA9D689229176620004A918 /* LaunchScreen.storyboard */,
 				9FA9D68C229176620004A918 /* Info.plist */,
+				9F917C9122918D3300E1A9A6 /* Podfile */,
 			);
 			path = ImageLoaderExample;
 			sourceTree = "<group>";

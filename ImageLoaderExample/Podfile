@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+use_frameworks!
+
+project 'ImageLoaderExample'
+workspace '../ImageLoader'
+
+pod 'ImageLoader', :path => '../'
+
+target 'ImageLoaderExample' do
+  platform :ios, '12.0'
+end
