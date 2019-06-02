@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct ButtonsRow {
+struct ButtonsRow: Equatable {
     
     // MARK: - Properties
     
@@ -19,16 +19,5 @@ struct ButtonsRow {
     let isLoadButtonEnabled: Bool
     let isCancelButtonEnabled: Bool
     let isIncrementButtonEnabled: Bool
-    
-    // MARK: - Compare operator
-    
-    static func ==(lhs: ButtonsRow, rhs: ButtonsRow) -> Bool {
-        return lhs.isLoadButtonEnabled == rhs.isLoadButtonEnabled
-            && lhs.isCancelButtonEnabled == rhs.isCancelButtonEnabled
-            && lhs.isIncrementButtonEnabled == rhs.isIncrementButtonEnabled
-            && lhs.loadButtonTitle == rhs.loadButtonTitle
-            && lhs.cancelButtonTitle == rhs.cancelButtonTitle
-            && lhs.incrementButtonTitle == rhs.incrementButtonTitle
-    }
     
 }

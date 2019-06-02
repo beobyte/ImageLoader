@@ -8,17 +8,11 @@
 
 import Foundation
 
-struct CounterRow {
+struct CounterRow: Equatable {
     
     // MARK: - Properties
     
     let count: Int
     let counterDescription: String
-    
-    // MARK: - Compare operator
-    
-    static func ==(lhs: CounterRow, rhs: CounterRow) -> Bool {
-        return lhs.count == rhs.count && lhs.counterDescription == rhs.counterDescription
-    }
     
 }

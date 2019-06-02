@@ -8,17 +8,11 @@
 
 import Foundation
 
-struct InputRow {
+struct InputRow: Equatable {
     
     // MARK: - Properties
     
     let urlString: String?
     let placeholder = "Enter url of image"
-    
-    // MARK: - Compare operator
-    
-    static func ==(lhs: InputRow, rhs: InputRow) -> Bool {
-        return lhs.urlString == rhs.urlString
-    }
     
 }

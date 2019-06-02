@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-struct ImageRow {
+struct ImageRow: Equatable {
     
     // MARK: - Inner types
     
@@ -40,12 +40,6 @@ struct ImageRow {
         case .progress:
             return nil
         }
-    }
-    
-    // MARK: - Compare operator
-    
-    static func ==(lhs: ImageRow, rhs: ImageRow) -> Bool {
-        return lhs.state == rhs.state
     }
     
 }
