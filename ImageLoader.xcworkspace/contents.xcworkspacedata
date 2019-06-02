@@ -7,4 +7,7 @@
    <FileRef
       location = "group:ImageLoaderExample/ImageLoaderExample.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:ImageLoaderExample/Pods/Pods.xcodeproj">
+   </FileRef>
 </Workspace>
