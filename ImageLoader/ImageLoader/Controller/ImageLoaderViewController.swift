@@ -14,9 +14,10 @@ public final class ImageLoaderViewController: UIViewController {
     
     @IBOutlet private weak var tableView: UITableView!
     
-    private var dataContoller: DataController = DataControllerImpl(counterStorage: CounterStorageImpl(),
+    private let dataContoller: DataController = DataControllerImpl(counterStorage: CounterStorageImpl(),
                                                                    imageLoader: ImageLoaderImpl(),
                                                                    imageUrlProvider: ImageUrlProvider.default())
+    private lazy var dataSource = TableViewDataSource(dataController: dataContoller)
     
     // MARK: - Overrides
     
@@ -25,7 +26,7 @@ public final class ImageLoaderViewController: UIViewController {
         
         dataContoller.delegate = self
         
-        tableView.dataSource = dataContoller
+        tableView.dataSource = dataSource
         tableView.estimatedRowHeight = UITableView.automaticDimension
         tableView.reloadData()
     }

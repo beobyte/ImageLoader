@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-protocol DataController: UITableViewDataSource {
+protocol DataController: class {
     
     var delegate: DataControllerDelegate? { get set }
     
@@ -18,4 +18,6 @@ protocol DataController: UITableViewDataSource {
     func incrementCounter()
     func updateImageUrl(with string: String?)
     
+    func numberOfRowsInSection(_ section: Int) -> Int
+    func rowForIndexPath(_ indexPath: IndexPath) -> Section.RowType
 }

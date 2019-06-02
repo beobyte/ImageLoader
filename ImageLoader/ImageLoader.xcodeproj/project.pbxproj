@@ -34,6 +34,7 @@
 		9FA9D6DB2291773B0004A918 /* ButtonsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA9D6C42291773B0004A918 /* ButtonsCell.swift */; };
 		9FA9D6DC2291773B0004A918 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA9D6C52291773B0004A918 /* ImageCell.swift */; };
 		9FA9D6DE2291776D0004A918 /* ImageLoaderStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA9D6DD2291776D0004A918 /* ImageLoaderStoryboard.storyboard */; };
+		9FE6CBAA22A3D1FE00559621 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE6CBA922A3D1FE00559621 /* TableViewDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		9FA9D6C42291773B0004A918 /* ButtonsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonsCell.swift; sourceTree = "<group>"; };
 		9FA9D6C52291773B0004A918 /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		9FA9D6DD2291776D0004A918 /* ImageLoaderStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageLoaderStoryboard.storyboard; sourceTree = "<group>"; };
+		9FE6CBA922A3D1FE00559621 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 				9FA9D6BB2291773B0004A918 /* DataController.swift */,
 				9FA9D6BC2291773B0004A918 /* DataControllerDelegate.swift */,
 				9FA9D6BA2291773B0004A918 /* DataControllerImpl.swift */,
+				9FE6CBA922A3D1FE00559621 /* TableViewDataSource.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				9FA9D6D02291773B0004A918 /* ButtonsStateProvider.swift in Sources */,
 				9FA9D6CC2291773B0004A918 /* Section.swift in Sources */,
 				9FA9D6D12291773B0004A918 /* ImageUrlProvider.swift in Sources */,
+				9FE6CBAA22A3D1FE00559621 /* TableViewDataSource.swift in Sources */,
 				9FA9D6CE2291773B0004A918 /* ImageLoader.swift in Sources */,
 				9FA9D6D92291773B0004A918 /* CounterCell.swift in Sources */,
 				9FA9D6DA2291773B0004A918 /* InputCell.swift in Sources */,

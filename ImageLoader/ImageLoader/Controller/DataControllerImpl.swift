@@ -87,6 +87,14 @@ final class DataControllerImpl: NSObject, DataController {
         reloadRowsIfNeeded()
     }
     
+    func numberOfRowsInSection(_ section: Int) -> Int {
+        return mainSection.rows.count
+    }
+    
+    func rowForIndexPath(_ indexPath: IndexPath) -> Section.RowType {
+        return mainSection.rows[indexPath.row]
+    }
+    
     // MARK: - Private methods
     
     private func createSection() -> Section {
@@ -134,54 +142,6 @@ final class DataControllerImpl: NSObject, DataController {
         if (!indexPaths.isEmpty) {
             mainSection = updatedSection
             delegate.reloadRows(at: indexPaths)
-        }
-    }
-    
-}
-
-// MARK: - UITableViewDataSource protocol
-
-extension DataControllerImpl: UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return mainSection.rows.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let row = mainSection.rows[indexPath.row]
-        
-        switch row {
-        case .image(let imageRow):
-            let cell = tableView.dequeueReusableCell(withIdentifier: ImageCell.reuseIdentifier,
-                                                     for:indexPath) as! ImageCell
-            cell.configure(isLoading: imageRow.isLoading,
-                           image: imageRow.currentImage)
-            return cell
-            
-        case .input(let inputRow):
-            let cell = tableView.dequeueReusableCell(withIdentifier: InputCell.reuseIdentifier,
-                                                     for:indexPath) as! InputCell
-            cell.configure(text: inputRow.urlString,
-                           placeholder: inputRow.placeholder)
-            return cell
-            
-        case .counter(let counterRow):
-            let cell = tableView.dequeueReusableCell(withIdentifier: CounterCell.reuseIdentifier,
-                                                     for:indexPath) as! CounterCell
-            cell.configure(description: counterRow.counterDescription,
-                           count: String(counterRow.count))
-            return cell
-            
-        case .buttons(let buttonsRow):
-            let cell = tableView.dequeueReusableCell(withIdentifier: ButtonsCell.reuseIdentifier,
-                                                     for:indexPath) as! ButtonsCell
-            cell.configure(loadButtonTitle: buttonsRow.loadButtonTitle,
-                           cancelButtonTitle: buttonsRow.cancelButtonTitle,
-                           incrementButtonTitle: buttonsRow.incrementButtonTitle,
-                           loadButtonEnabled: buttonsRow.isLoadButtonEnabled,
-                           cancelButtonEnabled: buttonsRow.isCancelButtonEnabled,
-                           incrementButtonEnabled: buttonsRow.isIncrementButtonEnabled)
-            return cell
         }
     }
     
